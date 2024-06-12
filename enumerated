@@ -3,10 +3,10 @@
 # using loop + ord()
  
 # initialize list 
-test_list = [input("Enter Name or word")]
+test_list = [input("Enter Name or word:  ")]
  
 # printing original list 
-print("The original list : " + str(test_list))
+# print("The original list : " + str(test_list))
  
 # Convert String list to ascii values
 # using loop + ord()
@@ -15,13 +15,36 @@ for ele in test_list:
     res.extend(ord(num) for num in ele)
  
 # printing result
-print("The ascii list is : " + str(res))
+# print("The ascii list is : " + str(res))
 
-print("Length of ascii list", len(res))
+# print("Length of ascii list", len(res))
 
 enumerated = 0
 
 for x in range(len(res)):
     enumerated += res[x]
     
-print("The enumerated number is:", enumerated)
+sum_of_digits = sum(int(digit) for digit in str(enumerated))
+# print(f"The sum of the digits in the number {enumerated} is: {sum_of_digits}")
+
+sum_of_digits = sum(int(digit) for digit in str(sum_of_digits))
+print(f"The checksum is: {sum_of_digits}")
+
+if sum_of_digits == 10:
+    print("Kether")
+elif sum_of_digits == 2:
+    print("Chokmah")
+elif sum_of_digits == 3:
+    print("Binah")
+elif sum_of_digits == 4:
+    print("Chesed")
+elif sum_of_digits == 5:
+    print("Geburah")
+elif sum_of_digits == 6:
+    print("Tipharet")
+elif sum_of_digits == 7:
+    print("Netzach")
+elif sum_of_digits == 8:
+    print("Hod")
+else:
+    print("Yesod")
