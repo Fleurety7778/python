@@ -1,0 +1,27 @@
+# Enumeration by
+# converting String list to ascii values
+# using loop + ord()
+ 
+# initialize list 
+test_list = [input("Enter Name or word")]
+ 
+# printing original list 
+print("The original list : " + str(test_list))
+ 
+# Convert String list to ascii values
+# using loop + ord()
+res = []
+for ele in test_list:
+    res.extend(ord(num) for num in ele)
+ 
+# printing result
+print("The ascii list is : " + str(res))
+
+print("Length of ascii list", len(res))
+
+enumerated = 0
+
+for x in range(len(res)):
+    enumerated += res[x]
+    
+print("The enumerated number is:", enumerated)
