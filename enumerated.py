@@ -35,5 +35,7 @@ elif sum_of_digits == 7:
     print("Netzach")
 elif sum_of_digits == 8:
     print("Hod")
-else:
+elif sum_of_digits == 9:
     print("Yesod")
+else:
+    print("Kether/Malkuth")
