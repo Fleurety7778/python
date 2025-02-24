@@ -19,3 +19,6 @@ f.write('\n')
 f.write('Charisma\n')
 f.write(str(random.randint(1,20)))
 f.close()
+
+f = open("character.txt", "r")
+print(f.read()) 
